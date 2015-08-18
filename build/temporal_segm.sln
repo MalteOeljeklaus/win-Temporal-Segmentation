@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "size_converter", "size_converter.vcxproj", "{BBFC9FA1-06EA-4F9B-9C22-29F5959A2BEA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scene-labeling", "scene-labeling.vcxproj", "{D8D482A9-D8B2-4533-98B0-2CEDBCF7B724}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "collate_sequences", "collate_sequences.vcxproj", "{9B4388D7-6B4B-4718-AC4D-F2E9B4A98807}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBFC9FA1-06EA-4F9B-9C22-29F5959A2BEA}.Debug|Win32.ActiveCfg = Release|x64
+		{BBFC9FA1-06EA-4F9B-9C22-29F5959A2BEA}.Debug|Win32.Build.0 = Release|x64
+		{BBFC9FA1-06EA-4F9B-9C22-29F5959A2BEA}.Release|Win32.ActiveCfg = Release|Win32
+		{BBFC9FA1-06EA-4F9B-9C22-29F5959A2BEA}.Release|Win32.Build.0 = Release|Win32
+		{D8D482A9-D8B2-4533-98B0-2CEDBCF7B724}.Debug|Win32.ActiveCfg = Release|x64
+		{D8D482A9-D8B2-4533-98B0-2CEDBCF7B724}.Debug|Win32.Build.0 = Release|x64
+		{D8D482A9-D8B2-4533-98B0-2CEDBCF7B724}.Release|Win32.ActiveCfg = Release|Win32
+		{D8D482A9-D8B2-4533-98B0-2CEDBCF7B724}.Release|Win32.Build.0 = Release|Win32
+		{9B4388D7-6B4B-4718-AC4D-F2E9B4A98807}.Debug|Win32.ActiveCfg = Release|x64
+		{9B4388D7-6B4B-4718-AC4D-F2E9B4A98807}.Debug|Win32.Build.0 = Release|x64
+		{9B4388D7-6B4B-4718-AC4D-F2E9B4A98807}.Release|Win32.ActiveCfg = Release|Win32
+		{9B4388D7-6B4B-4718-AC4D-F2E9B4A98807}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

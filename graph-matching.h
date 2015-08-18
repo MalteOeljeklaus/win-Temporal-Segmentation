@@ -29,7 +29,9 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 #include "segment-graph.h"
 #include "list_utils.h"
 #include <time.h>
+#ifndef _MSC_VER
 #include <sys/time.h>
+#endif
 #include <assert.h>
 #include "basic-morpho.h"
 
@@ -184,7 +186,7 @@ graph build_graph(label_image l1, // input : segmentation of image at time t
  	 // if the segments are similar, the score is low
 	 G.edges[k].w = (Union[x][y] *DistanceCentroids[x][y]/4.0 )/(Inter[x][y]+0.1); 
 	 if (DistanceCentroids[x][y]>=DIST_CENTROID_MIN_DIST) 
-	   G.edges[k].w = (Union[x][y] *DistanceCentroids[x][y]/10.0 )/(Inter[x][y]+0.1) + 5*fabs(centroids2[y][3]-centroids1[x][3])/255.0;
+	   G.edges[k].w = (Union[x][y] *DistanceCentroids[x][y]/10.0 )/(Inter[x][y]+0.1) + 5*fabs((double)centroids2[y][3]-centroids1[x][3])/255.0;
 	 G.edges[k].a = x; 
 	 G.edges[k].b = y+l1.nb_cpts;
 	

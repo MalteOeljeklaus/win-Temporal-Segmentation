@@ -27,7 +27,9 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 #include "label-components.h"
 #include <assert.h>
 #include <time.h>
+#ifndef _MSC_VER
 #include <sys/time.h>
+#endif
 
 #define max( a, b ) ( ((a) > (b)) ? (a) : (b) )  
 #define min( a, b ) ( ((a) < (b)) ? (a) : (b) )

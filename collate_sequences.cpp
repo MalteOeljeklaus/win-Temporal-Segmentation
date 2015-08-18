@@ -11,7 +11,9 @@
 #include "color_flow.h"
 
 #include <time.h>
+#ifndef _MSC_VER
 #include <sys/time.h>
+#endif
 
 int main(int argc, char **argv) {
   if (argc < 6) {
